@@ -7,6 +7,7 @@ def load_library(path)
     my_hash = key.each_with_object({}) |key2, value2|
     binding.pry
   end
+  end
   emoticon_data
 end
 
