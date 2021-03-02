@@ -14,7 +14,8 @@ end
 
 def get_japanese_emoticon(path, english_emoticon)
   japanese_translation = ""
-  load_library(path)
+  load_library(path).each do |key, value|
+  end
   japanese_translation
 end
 
