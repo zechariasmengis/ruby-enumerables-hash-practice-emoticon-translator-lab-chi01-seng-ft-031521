@@ -15,6 +15,7 @@ end
 def get_japanese_emoticon(path, english_emoticon)
   japanese_translation = ""
   load_library(path).each do |key, value|
+    binding.pry
   end
   japanese_translation
 end
