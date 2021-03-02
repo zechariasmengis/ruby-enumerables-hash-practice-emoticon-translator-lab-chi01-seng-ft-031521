@@ -21,7 +21,7 @@ def get_english_meaning(path, japanese_emoticon)
     value.each do |key2, value2|
       if japanese_emoticon = value2
         binding.pry
-        english_meaning = japanese_emoticon
+        english_meaning = key
       binding.pry
     end
   end
