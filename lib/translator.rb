@@ -6,6 +6,7 @@ def load_library(path)
   emoticon_data.each do |key, value|
     my_hash = {}
     end
+    binding.pry
   end
   emoticon_data
 end
