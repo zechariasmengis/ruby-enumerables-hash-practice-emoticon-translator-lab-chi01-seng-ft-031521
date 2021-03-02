@@ -18,6 +18,7 @@ def get_japanese_emoticon(path, english_emoticon)
     value.each do |key2, value2|
       if english_emoticon == value2
         japanese_tanslation = value[:japanese]
+        binding.pry
       end
     end
   end
