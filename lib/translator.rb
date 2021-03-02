@@ -2,7 +2,7 @@ require "yaml"
 require "pry"
 
 def load_library(path)
-  emoticon_translator = {} do 
+  emoticon_translator = path.each_with_object({}) do 
   emoticon_translator
   binding.pry
 end
