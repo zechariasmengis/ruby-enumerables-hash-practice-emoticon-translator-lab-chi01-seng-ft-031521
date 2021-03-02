@@ -16,7 +16,8 @@ def get_japanese_emoticon(path, english_emoticon)
   japanese_translation = ""
   load_library(path).each do |key, value|
     value.each do |key2, value2|
-      binding.pry
+      if english_emoticon == value2
+        japanese_tanslation
     end
   end
   japanese_translation
