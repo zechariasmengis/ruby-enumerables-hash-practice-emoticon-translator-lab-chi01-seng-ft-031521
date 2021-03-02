@@ -6,7 +6,7 @@ def load_library(path)
   emoticon_data.each do |key, value|
     my_hash = {}
     if !my_hash(key)
-      my_hash(key) = {:english => "", :japanese => ""}
+      my_hash(key) = {}
     end
     binding.pry
   end
