@@ -4,10 +4,10 @@ require "pry"
 def load_library(path)
   emoticon_data = YAML.load_file(path)
   emoticon_data.each do |key, value|
-    #my_hash = key.each_with_object({}) do |key2|
-    
-    #end
+    my_hash = key.each_with_object({}) do |key2|
     binding.pry
+    end
+    
   end
   emoticon_data
 end
