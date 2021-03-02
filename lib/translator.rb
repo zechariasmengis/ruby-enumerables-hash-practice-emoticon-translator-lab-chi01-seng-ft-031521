@@ -2,12 +2,12 @@ require "yaml"
 require "pry"
 
 def load_library(path)
-  emoticon_translator = YAML.load_file(path)
-  emoticon_translator.each do |(key, value), my_hash|
-    my_hash = emoticon_translator.keys
+  emoticon_data = YAML.load_file(path)
+  emoticon_data.each do |(key, value), my_hash|
+    my_hash = emoticon_data.values
     binding.pry
   end
-  emoticon_translator
+  emoticon_data
 end
 
 def get_japanese_emoticon
