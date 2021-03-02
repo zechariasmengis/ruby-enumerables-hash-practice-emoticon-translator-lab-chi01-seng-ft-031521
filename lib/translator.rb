@@ -7,6 +7,7 @@ def load_library(path)
     my_hash = {}
     if !my_hash(key)
       my_hash(key) = {}
+      binding.pry
     end
     binding.pry
   end
