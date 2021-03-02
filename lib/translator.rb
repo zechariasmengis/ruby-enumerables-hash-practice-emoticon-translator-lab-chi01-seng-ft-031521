@@ -3,6 +3,9 @@ require "pry"
 
 def load_library(path)
   emoticon_translator = YAML.load_file(path)
+  emoticon_translator.each do |key, value|
+    binding.pry
+  end
   emoticon_translator
   binding.pry
 end
