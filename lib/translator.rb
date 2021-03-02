@@ -17,7 +17,7 @@ def get_japanese_emoticon(path, english_emoticon)
   load_library(path).each do |key, value|
     value.each do |key2, value2|
       if english_emoticon == value2
-        japanese_tanslation = value[:japanese]
+        japanese_tanslation = value[1]
       end
     end
   end
