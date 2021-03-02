@@ -5,8 +5,7 @@ def load_library(path)
   emoticon_data = YAML.load_file(path)
   emoticon_data.each do |key, value|
     my_hash = {}
-    key.each do |language|
-      binding.pry
+    
     end
     
   end
