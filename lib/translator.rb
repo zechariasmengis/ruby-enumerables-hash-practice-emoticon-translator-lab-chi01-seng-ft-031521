@@ -2,7 +2,7 @@ require "yaml"
 require "pry"
 
 def load_library(path)
-  emoticon_translator = {}
+  emoticon_translator = {} do 
   emoticon_translator
   binding.pry
 end
